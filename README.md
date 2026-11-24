@@ -14,15 +14,15 @@ English | [简体中文](README.zh-CN.md)
 *Released by [Shanghai AI Laboratory](https://www.shlab.org.cn/).*
 
 <p>
-  <a href="https://internrobotics.github.io/EBench-doc/"><img alt="Project Page" src="https://img.shields.io/badge/Project%20Page-EBench%20Docs-1f6feb?style=for-the-badge&logo=readthedocs&logoColor=white"></a>
+  <a href="https://sage-physicalai.github.io/EBench-doc/"><img alt="Project Page" src="https://img.shields.io/badge/Project%20Page-EBench%20Docs-1f6feb?style=for-the-badge&logo=readthedocs&logoColor=white"></a>
   <a href="https://arxiv.org/pdf/2606.18239"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-EBench-1f6feb?style=for-the-badge&logo=arxiv&logoColor=white"></a>
   <a href="https://internrobotics.shlab.org.cn/eval"><img alt="Leaderboard" src="https://img.shields.io/badge/Leaderboard-Online%20Challenge-22c55e?style=for-the-badge&logoColor=white"></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"></a>
 </p>
 
 <p>
-  <a href="https://github.com/InternRobotics/GenManip"><img alt="Simulation Server" src="https://img.shields.io/badge/Simulation%20Server-GenManip-181717?style=for-the-badge&logo=github&logoColor=white"></a>
-  <a href="https://github.com/InternRobotics/genmanip-client"><img alt="Client CLI" src="https://img.shields.io/badge/Client%20CLI-genmanip--client-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/Sage-PhysicalAI/GenManip"><img alt="Simulation Server" src="https://img.shields.io/badge/Simulation%20Server-GenManip-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/Sage-PhysicalAI/genmanip-client"><img alt="Client CLI" src="https://img.shields.io/badge/Client%20CLI-genmanip--client-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
 
 <p>
@@ -39,14 +39,14 @@ English | [简体中文](README.zh-CN.md)
 
 #### 💡 Interactive Analysis Tool
 
-A new systematic diagnostic tool, **gmp analyse**, automatically produces a **five-axis capability** profile, such as atomic skills and manipulation precision, together with a **four-dimensional generalization analysis** after evaluation. Users can interactively select evaluation results and compare them with four reference baselines, **π0, π0.5, X-VLA, and InternVLA-A1**, across multiple capability and generalization dimensions. **[Example →](https://raw.githack.com/InternRobotics/EBench/main/assets/analyse_report.html)**
+A new systematic diagnostic tool, **gmp analyse**, automatically produces a **five-axis capability** profile, such as atomic skills and manipulation precision, together with a **four-dimensional generalization analysis** after evaluation. Users can interactively select evaluation results and compare them with four reference baselines, **π0, π0.5, X-VLA, and InternVLA-A1**, across multiple capability and generalization dimensions. **[Example →](https://raw.githack.com/Sage-PhysicalAI/EBench/main/assets/analyse_report.html)**
 
 | Date | Highlight |
 | :--- | :--- |
-| **2026-09** | 📄 **[GPT-6-Astra evaluation report](https://internrobotics.github.io/EBench-Astra-Tech-Report)** — Explore its performance on EBench through a detailed breakdown of manipulation capabilities and generalization. |
+| **2026-09** | 📄 **[GPT-6-Astra evaluation report](https://sage-physicalai.github.io/EBench-Astra-Tech-Report)** — Explore its performance on EBench through a detailed breakdown of manipulation capabilities and generalization. |
 | **2026-09** | 🔧 **Minor EBench fixes and improvements** — Refined the web interface of the online evaluation platform, and adjusted the step limits for `bottle` and `shop` from 3,000 to 5,000. Explore the latest leaderboard models’ capability profiles and generalization analysis. **[Leaderboard analysis →](https://internrobotics.shlab.org.cn/eval/model-analysis?model=OpenWAM-Alpha)**|
 | **2026-09** | 🛠️ **OpenPI baseline update** — Updated π0 / π0.5 configs. Please use the updated baseline code for evaluation and reproducing results. See the [update notes](baselines/openpi/README.md#update-notes). |
-| **2026-07** | 🛠️ **Evaluation toolkit** — [`genmanip-client`](https://github.com/InternRobotics/genmanip-client) brings submission, monitoring, action/state plots, and interactive episode visualization together in the `gmp` CLI. |
+| **2026-07** | 🛠️ **Evaluation toolkit** — [`genmanip-client`](https://github.com/Sage-PhysicalAI/genmanip-client) brings submission, monitoring, action/state plots, and interactive episode visualization together in the `gmp` CLI. |
 | **2026-06** | 🚀 **Public release** — EBench, reference baselines, training data, and held-out online evaluation are now available. |
 
 ## What is EBench?
@@ -64,7 +64,7 @@ This repository is the **project entry point**. It hosts reference baselines and
 
 Two evaluation tracks are exposed: **Specialist** (Tabletop or Mobile Manip) and **Generalist** (both at once).
 
-For the full methodology, task taxonomy, and per-axis rationale, see the [project documentation](https://internrobotics.github.io/EBench-doc/).
+For the full methodology, task taxonomy, and per-axis rationale, see the [project documentation](https://sage-physicalai.github.io/EBench-doc/).
 
 ## Project layout
 
@@ -72,12 +72,12 @@ EBench is split across a small constellation of repositories. **This repo** is t
 
 | Component | Where it lives | What it provides |
 | --- | --- | --- |
-| **EBench** (this repo) | [InternRobotics/EBench](https://github.com/InternRobotics/EBench) | Reference baselines, scripts, project entry point |
-| **GenManip** | [InternRobotics/GenManip](https://github.com/InternRobotics/GenManip) | Isaac Sim evaluation server, task configs |
-| **genmanip-client** | [InternRobotics/genmanip-client](https://github.com/InternRobotics/genmanip-client) | `gmp` CLI + `EvalClient` Python API |
+| **EBench** (this repo) | [Sage-PhysicalAI/EBench](https://github.com/Sage-PhysicalAI/EBench) | Reference baselines, scripts, project entry point |
+| **GenManip** | [Sage-PhysicalAI/GenManip](https://github.com/Sage-PhysicalAI/GenManip) | Isaac Sim evaluation server, task configs |
+| **genmanip-client** | [Sage-PhysicalAI/genmanip-client](https://github.com/Sage-PhysicalAI/genmanip-client) | `gmp` CLI + `EvalClient` Python API |
 | **EBench-Assets** | [🤗 EBench-Assets](https://huggingface.co/datasets/InternRobotics/EBench-Assets) | Scenes, objects, and task assets |
 | **EBench-Dataset** | [🤗 EBench-Dataset](https://huggingface.co/datasets/InternRobotics/EBench-Dataset) | Training trajectories (LeRobot format) |
-| **Docs site** | [internrobotics.github.io/EBench-doc](https://internrobotics.github.io/EBench-doc/) | Setup, evaluation workflow, CLI reference |
+| **Docs site** | [sage-physicalai.github.io/EBench-doc](https://sage-physicalai.github.io/EBench-doc/) | Setup, evaluation workflow, CLI reference |
 | **Online Challenge** | [internrobotics.shlab.org.cn/eval](https://internrobotics.shlab.org.cn/eval) | Remote evaluation, leaderboard, diagnostic reports |
 
 ```
@@ -97,10 +97,10 @@ EBench runs as a client–server system. The server runs Isaac Sim; the client (
 
 ```bash
 # 1. Bring up the server  →  see Environment Setup
-#    https://internrobotics.github.io/EBench-doc/getting-started/environment/
+#    https://sage-physicalai.github.io/EBench-doc/getting-started/environment/
 
 # 2. Clone EBench and its pinned dependencies
-git clone --recursive https://github.com/InternRobotics/EBench.git
+git clone --recursive https://github.com/Sage-PhysicalAI/EBench.git
 cd EBench
 
 # If EBench was already cloned without --recursive:
@@ -115,7 +115,7 @@ gmp eval  -a r5a -g lift2 --worker_ids 0
 gmp status
 ```
 
-A full validation pass takes roughly **30 minutes on 8× RTX 4090**. Detailed setup, asset download, and the complete `gmp` reference are in the [docs site](https://internrobotics.github.io/EBench-doc/).
+A full validation pass takes roughly **30 minutes on 8× RTX 4090**. Detailed setup, asset download, and the complete `gmp` reference are in the [docs site](https://sage-physicalai.github.io/EBench-doc/).
 
 ## Evaluate with a coding agent
 
@@ -125,7 +125,7 @@ To start, ask your agent: **“Read `skills/ebench-setup/SKILL.md` and check whe
 
 ## Tasks
 
-**26 task types** across *Long-Horizon*, *Pick-and-Place*, and *Dexterous & Precise*, expanded with the four generalization axes and three splits into **794 evaluation task instances**. Browse the video gallery at [Task Showcase](https://internrobotics.github.io/EBench-doc/evaluation/task-showcase/).
+**26 task types** across *Long-Horizon*, *Pick-and-Place*, and *Dexterous & Precise*, expanded with the four generalization axes and three splits into **794 evaluation task instances**. Browse the video gallery at [Task Showcase](https://sage-physicalai.github.io/EBench-doc/evaluation/task-showcase/).
 
 ## Baselines
 
@@ -181,12 +181,12 @@ huggingface-cli download hxma/EBench-Generalist-InternVLA-A1 \
 cd baselines/InternVLA-A1 && bash eval_pjsim.sh
 ```
 
-To plug your own model in, follow the contract documented at [Integrate Your Own Model](https://internrobotics.github.io/EBench-doc/evaluation/custom-model/).
+To plug your own model in, follow the contract documented at [Integrate Your Own Model](https://sage-physicalai.github.io/EBench-doc/evaluation/custom-model/).
 
 
 ## Online challenge
 
-The 24/7 evaluation platform at [internrobotics.shlab.org.cn/eval](https://internrobotics.shlab.org.cn/eval) runs every submission on the held-out Test-Mini split and produces an automatic diagnostic report (capability radar, validation→test transfer curve, generalization radar, task heatmap). Submission flow: see the [Challenge](https://internrobotics.github.io/EBench-doc/challenge/) page.
+The 24/7 evaluation platform at [internrobotics.shlab.org.cn/eval](https://internrobotics.shlab.org.cn/eval) runs every submission on the held-out Test-Mini split and produces an automatic diagnostic report (capability radar, validation→test transfer curve, generalization radar, task heatmap). Submission flow: see the [Challenge](https://sage-physicalai.github.io/EBench-doc/challenge/) page.
 
 ## Citation
 
